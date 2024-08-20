@@ -1,0 +1,40 @@
+/*
+        # = id
+        . = class
+        : = pseudo-cass
+        :: = pseudo-element
+        > = children
+*/
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+a:active{
+    color: yellow;
+}
+a::before{
+    content: '[✦]';
+    color: cadetblue;
+    
+}
+a::after{
+    content: '[✦]';
+    text-decoration: none;
+    font-weight: normal;
+    color: cadetblue;
+}
+.special{
+    background-color: rgba(157, 157, 238, 0.473);
+}
+h1{
+    color: pink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

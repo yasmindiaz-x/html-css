@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradiente que se esvai em um elemento h1</title>
+<style>
+    body {
+        background-color: #f0f0f0; /* Cor de fundo */
+        height: 100vh; /* Altura total da janela de visualização */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 3em; /* Tamanho da fonte do cabeçalho */
+        text-align: center;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Gradiente que se esvai */
+        -webkit-background-clip: text; /* Clip para aplicar o gradiente ao texto */
+        color: transparent; /* Torna o texto transparente para aplicar o gradiente */
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+    <h1>Gradiente que se esvai</h1>
+</body>
+</html>

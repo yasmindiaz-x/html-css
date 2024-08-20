@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    /* Medidas absolutas
+    cm, mm, in, px, pt, pc
+
+    16 px geralmente = 1em
+
+    Medidas relativas
+    em(altura do M maiusculo), ex(altura do x), rem, vw, vh, % */
+
+    /* shorthand font
+    - font-style -> font-weight -> font-size -> font-family */
+}
