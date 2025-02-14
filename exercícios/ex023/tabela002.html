@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        td.num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 3px;
+        }
+        tbody tr:nth-child(2n-1){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                tr, td, th
+            TBODY
+                tr, td, th
+            TFOOT
+                tr, td, th
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 137 078</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 780</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>136 462 015</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quae perferendis iure laboriosam id ratione aperiam nam, magni ad praesentium voluptas, hic totam veniam fuga quas officiis. Eum, ut nulla!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, iure? Porro deleniti perspiciatis laborum saepe aut laudantium illum consequatur ipsam tempora dolorem. Assumenda laudantium voluptate sapiente quidem cupiditate, totam autem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt at veniam nulla quidem rerum nemo amet quibusdam eius aliquam deleniti voluptatibus, vero voluptatum quas sapiente iste quis molestiae nam recusandae?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure deleniti excepturi eaque. Veniam deleniti blanditiis illo incidunt. Consequuntur eos repudiandae corporis officiis aliquid, velit explicabo molestias voluptas eum nostrum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquid autem rerum incidunt aut explicabo delectus nobis ipsam amet nihil cupiditate fugit nisi, enim blanditiis consequuntur magnam libero quam omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius numquam magni placeat suscipit assumenda vitae animi quis repellendus vel accusantium explicabo quidem sit atque a perferendis velit, fugiat, quibusdam aliquam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorem blanditiis id. Cum eum suscipit nostrum velit nemo! Excepturi quidem nulla alias esse asperiores odio explicabo iste voluptatem, possimus iusto?</p>
+</body>
+</html>
