@@ -14,8 +14,14 @@
         </p>
         <p>
             <label for="inivel">Nível de satisfação</label>
-            <input type="range" name="nivel" id="inivel" min="1" max="10" value="2">
-            <!-- Podem ser diferentes de acordo com cada navegador -->
+            <input type="range" name="nivel" id="inivel" min="1" max="100" value="20" oninput="updateValue(this.value)"> <span id="value">20%</span>
+            <script>
+                function updateValue(val) {
+                  document.getElementById("value").textContent = val + "%";
+                }
+              </script>
+              <!-- a partir de oninput é tudo JavaScript -->
+            <!-- Podem ser diferentes layouts de acordo com cada navegador -->
         </p>
         <p>
             <label for="ifoto">Foto de perfil</label>
