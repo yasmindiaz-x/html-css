@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* para o ícone do hamburguer: https://fonts.google.com/icons?hl=pt-br&selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e3e3e3 */
+
+/* mobile first */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+body, html{
+    background-color: lightgray;
+}
+div#head{
+    background-color: gray;
+}
+#head > h1{
+    text-align: center;
+    padding: 10px;
+}
+i#burger{
+    background-color: rgb(44, 44, 44);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+i#burger:hover{
+    background-color: white;
+    color: black;
+}
+nav {
+    display: none;
+}
+nav > ul {
+    list-style-type: none;
+}
+nav a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(74, 75, 75, 0.822);
+    color: white;
+    border-top: 2px solid gray;
+}
+nav a:hover{
+    background-color: gray;
+}
+div#content{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+article > h2{
+    padding-bottom: 20px;
+}
+article > p{
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
