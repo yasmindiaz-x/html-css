@@ -13,7 +13,7 @@ html {
 body, html{
     background-color: lightgray;
 }
-div#head{
+#head{
     background-color: gray;
 }
 #head > h1{
@@ -50,7 +50,7 @@ nav a{
 nav a:hover{
     background-color: gray;
 }
-div#content{
+#content{
     width: 90vw;
     background-color: white;
     margin: auto;
