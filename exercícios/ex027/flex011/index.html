@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+    .conteiner1{
+        background-color: aquamarine;
+        display: flex;
+        margin-bottom: 50px;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+    #item{
+        border: 1px solid black;
+        padding: 50px; 
+        text-align: center;
+        flex: 0 1 150px;
+        
+    }
+
+
+    .conteiner2{
+        background-color: rgb(170, 104, 233);
+        display: flex;
+        margin-bottom: 50px;
+        flex-flow: row nowrap;
+        align-content: center;
+        
+    }
+    #item2{
+        border: 1px solid black;
+        padding: 50px; 
+        text-align: center;
+        flex: 2 0 150px;
+    }
+
+
+    .conteiner3{
+        background-color: rgb(233, 224, 104);
+        display: flex;
+        margin-bottom: 50px;
+        flex-flow: row nowrap;
+        align-content: center;
+        
+    }
+    #item3{
+        border: 1px solid black;
+        padding: 50px;
+        text-align: center; 
+        flex: 1 2 150px;
+    }
+    </style>
+</head>
+<body>
+    <div class="conteiner1">
+        <div id="item">A</div>
+        <div id="item">B</div>
+        <div id="item">C</div>
+    </div>
+
+    <div class="conteiner2">
+        <div id="item2">D</div>
+        <div id="item2">E</div>
+        <div id="item2">F</div>
+    </div>
+
+        <div class="conteiner3">
+            <div id="item3">G</div>
+            <div id="item3">H</div>
+            <div id="item3">I</div>
+        </div>   
+
+
+</body>
+</html>
